@@ -1,4 +1,5 @@
 <h2>
  {{ nombre }}
 </h2>
-<h3>El mejor juego es: {{ mejor_juego }}</h3>
+<h3 *ngIf ="mostrar_retro != true">El mejor juego es: {{ mejor_juego }}</h3>
+<h3 [style.background]="color" *ngIf ="mostrar_retro == true">El juego retro es: {{ mejor_juego_retro }}</h3>
